@@ -25,7 +25,7 @@ SECRET_KEY = 'kd70*3-e22q4_2b33!ay*47kpo41g4_oduenmx9t3t4bvr7ynm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['My-Hotel-Reservation.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['My-Hotel-Reservation.onrender']
 
 
 # Application definition
@@ -37,10 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'room_slot.booking',
-    'room_slot.login',
-    'room_slot.room_manager',
-    'room_slot.customer',
+    'booking',
+    'login',
+    'room_manager',
+    'customer',
     'rest_framework',
 ]
 
