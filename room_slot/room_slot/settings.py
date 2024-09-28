@@ -84,7 +84,6 @@ DATABASES = {
         'PORT': '5432',
         'OPTIONS': {
             'options': '-c timezone=UTC',  # Ensure timezone is set to UTC
-            'driver': 'django.db.backends.postgresql_psycopg2',
         },
     }
 }
