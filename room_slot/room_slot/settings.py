@@ -77,14 +77,11 @@ WSGI_APPLICATION = 'room_slot.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hotel_db',
-        'USER': 'erdey',
-        'PASSWORD': 'erdey@123',
-        'HOST': '127.0.0.1',
+        'NAME': 'hotel_db_3giw',  # Replace with your Render database name
+        'USER': 'hotel_db_3giw_user',   # Replace with your Render database user
+        'PASSWORD': 'Wb7DkvH5oOjZHsqM4J6V22BWqOErUvHi',  # Replace with your Render database password
+        'HOST': 'dpg-crrv9r0gph6c738mgu2g-a',   # Replace with your Render database host
         'PORT': '5432',
-        'OPTIONS': {
-            'options': '-c timezone=UTC',  # set timezone to UTC
-        },
     }
 }
 
