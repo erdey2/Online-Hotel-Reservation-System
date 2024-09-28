@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'kd70*3-e22q4_2b33!ay*47kpo41g4_oduenmx9t3t4bvr7ynm'
+SECRET_KEY = '3oq*czl80lbk+61axrzp2b9^pex%(565&(l6sb$c=wn)xm(!uq'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -59,7 +59,7 @@ ROOT_URLCONF = 'room_slot.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,17 +74,14 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'room_slot.wsgi.application'
 
+
+# Database
+# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'hotel_db_3giw',
-        'USER': 'hotel_db_3giw_user',
-        'PASSWORD': 'Wb7DkvH5oOjZHsqM4J6V22BWqOErUvHi',
-        'HOST': 'dpg-crrv9r0gph6c738mgu2g-a.oregon-postgres.render.com',
-        'PORT': '5432',
-        'OPTIONS': {
-            'options': '-c timezone=UTC',  # Ensure timezone is set to UTC
-        },
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -113,13 +110,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+TIME_ZONE = 'UTC'
+
 USE_I18N = True
 
 USE_L10N = True
 
-TIME_ZONE =  'UTC'
 USE_TZ = True
-
 
 
 # Static files (CSS, JavaScript, Images)
